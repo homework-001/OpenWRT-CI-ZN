@@ -33,6 +33,9 @@ git clone --depth=1 https://github.com/gdy666/luci-app-lucky package/luci-app-lu
 
 git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
 
+# Theme
+git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
 # msd_lite
 git clone --depth=1 https://github.com/ximiTech/luci-app-msd_lite package/luci-app-msd_lite
