@@ -8,9 +8,6 @@ sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.
 # 修改本地时间格式
 sed -i 's/os.date()/os.date("%a %Y-%m-%d %H:%M:%S")/g' package/lean/autocore/files/*/index.htm
 
-# 在线用户
-sed -i '1i src-git haibo https://github.com/haiibo/openwrt-packages' feeds.conf.default
-
 # 修复 hostapd 报错
 cp -f $GITHUB_WORKSPACE/scripts/011-fix-mbo-modules-build.patch package/network/services/hostapd/patches/011-fix-mbo-modules-build.patch
 
@@ -43,13 +40,10 @@ git clone --depth=1 https://github.com/sirpdboy/luci-app-partexp.git package/luc
 git clone --depth=1 https://github.com/sirpdboy/luci-app-advancedplus package/luci-app-advancedplus
 git clone --depth=1 https://github.com/gdy666/luci-app-lucky package/luci-app-lucky
 git clone --depth=1 https://github.com/animegasan/luci-app-wolplus.git package/luci-app-wolplus
+git clone --depth=1 https://github.com/sirpdboy/luci-app-advancedplus package/luci-app-advancedplus
 
 # Themes
 git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
-git clone --depth=1 https://github.com/sirpdboy/luci-theme-kucat package/luci-theme-kuca
-
-# 科学上网插件
-git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
 
 # msd_lite
 git clone --depth=1 https://github.com/ximiTech/luci-app-msd_lite package/luci-app-msd_lite
