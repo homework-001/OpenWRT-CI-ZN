@@ -41,7 +41,7 @@ git clone --depth=1 https://github.com/sirpdboy/luci-app-advancedplus package/lu
 git clone --depth=1 https://github.com/gdy666/luci-app-lucky package/luci-app-lucky
 git clone --depth=1 https://github.com/animegasan/luci-app-wolplus.git package/luci-app-wolplus
 git clone --depth=1 https://github.com/sirpdboy/luci-app-advancedplus package/luci-app-advancedplus
-
+git clone --depth=1 https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter    
 # Themes
 git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 
